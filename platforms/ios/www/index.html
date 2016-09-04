@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <META HTTP-EQUIV="Expires" CONTENT="-1">
+
+         <link rel="stylesheet" href="css/bootstrap.min.css">
+
+          <!-- Optional theme -->
+          <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/indsummer_styles.css" />
+        <script src="js/jquery.min.js"></script>
+        <title>Indian Summer</title>
+
+
+    </head>
+    <body> <!--onload="init()"-->
+
+<div class="container">
+    <div class="demo-content" id="content">
+        <div>
+            <nav class="navigation">
+                <a href="#" id="open"><span class="ion ion-navicon"></span></a>
+            </nav>
+            <div class="fb-icon text-right">
+            <!-- <button id="contactLink" class="link">Contact Us</button> -->
+            
+                <button id="modalOpen">Contact Us</button>
+                <a class="ion ion-social-facebook" target="_blank" href="https://www.facebook.com/indsummerNZ/"></a>
+            </div>         
+        </div>
+
+
+
+        <div id="page1" class="col-xs-12 text-center">
+            <div class="top_banner"><img class="img-responsive" src="img/IndianSummer-logo-e.png">
+            </div>
+
+
+            <div class="journeyText">
+                A Journey through food
+            </div>
+            <!-- <h2>Menu</h2> -->
+            <h4 class="title"><button id="hv-menu-point-Btn">Hobsonville Point Menu</button></h4>
+            <div id="hobsonville-point-menu" style="display: none;">
+                <div class="entree">
+                    <div class="dropdown-container">
+                        <!-- <button id="entree" class="menu-links">Entree</button> -->
+                        <button id="entree" class="menu-links">Entree</button>
+                        <ul class="menu-display" style="display:none;">
+                            <li>
+                                <div class="item-name">Vegetable Samosa<span class="price">$6.00</span></div>
+                                <div class="description">Pastry stuffed with spicy potatoes and peas. </div>
+                            </li>
+                            <li>
+                                <div class="item-name">Palak Pakora<span class="price">$6.50</span></div>
+                                <div class="description">Spinach and pea flour fritters.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="chefSpecial">
+                    <div class="dropdown-container">
+                        <button id="chefSpecial" class="menu-links">Chef's Special</button>
+
+                        <ul class="menu-display" style="display:none;">
+                            <li>
+                                <div class="item-name">Amritsari Fish<span class="price">$9.50</span></div>
+                                <div class="description">Mouth-watering fish with lots of spices</div>
+                            </li>
+                            <li>
+                                <div class="item-name">Chicken Xacuti (Shakuti)<span class="price">$19.50</span></div>
+                                <div class="description">A unique Goan dish that consists of Poppy seeds and Kashmiri Chillies.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div><!--hobsonville-point-menu-->
+
+            <div class="clear"></div>
+
+
+
+
+            <h4 class="title"><button id="hv-menu-Btn">Hobsonville Menu</button></h4>
+            <div id="hobsonville-menu" style="display:none;">
+                <div class="entree-hv">
+                    <div class="dropdown-container">
+                        <!-- <button id="entree" class="menu-links">Entree</button> -->
+                        <button id="entree-hv" class="menu-links">Entree Hv menu</button>
+                        <ul class="menu-display" style="display:none;">
+                            <li>
+                                <div class="item-name">Vegetable Samosa<span class="price">$6.00</span></div>
+                                <div class="description">Pastry stuffed with spicy potatoes and peas. </div>
+                            </li>
+                            <li>
+                                <div class="item-name">Palak Pakora<span class="price">$6.50</span></div>
+                                <div class="description">Spinach and pea flour fritters.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+             </div> 
+
+            
+
+            <!--Contact Us MODAL-->    
+            <div class="overlay" style="display:none;">
+              <div class="contact-details">
+
+                 <p>We are Located at Hobsonville and Hobsonville Point(New Branch):</p>
+
+                    <h4>Hobsonville Branch:</h4>
+
+                    <p>120A Hobsonville Road,
+                    Hobsonville
+                    Auckland 0618.
+                    </p>
+                    <p>Email: info@indiansummer.co.nz</p>
+
+                    <h4>Hobsonville Point Branch:</h4>
+
+                    <p>6/160 Hobsonville Point Road,<br>
+                    Hobsonville<br>
+                    Auckland 0618.</p>
+
+                    <p>Email: indiansummerhobsonvilleakl@gmail.com</p>
+
+                    <h5>Opening Hours</h5>
+
+                    <p>We are open 7 days for Lunch and Dinner.<br>
+                    Lunch hours – 11.30am to 2.30pm<br>
+                    Dinner hours – 5pm till late<br>
+                    Contact no – 020 4113 2550 or 021 139 8407   </p>
+
+
+                                    
+                </div>
+              <button id="modalClose" class="menu-links">Close</button>
+            </div>
+            
+        </div><!--page1-->
+
+        <div id="page2" class="col-xs-12 text-center" style="display: none;">
+            Hobsonville point menu goes here
+        </div>   
+
+
+        <div class="col-xs-12 text-center page2222" style="display: none;">
+            <div class="journeyText">
+                Text goes here
+            </div>
+        </div>
+
+
+         
+    </div>
+
+
+    <div id="offcanvas">
+        <a class="ion ion-close" href="#" id="close"></a>
+
+        <div class="widget" id="about">  
+           
+                <!-- <a id="hvp-menu" href="#">HVP Menu</a> -->
+                
+           
+            <h3>About Us</h3>
+
+
+            <p>To make your visit memorable, the menu has been compiled under my personal supervision to place at your disposal a choice of delicately prepared and pleasingly tasty dishes having the aroma and flavour of Indian spices made to perfection.</p>
+
+            <p>Let the mystic environment of Indian Summer blend with your valued presence.</p>
+        </div>
+
+        <div class="widget image" id="images">
+            <img alt="Indian Summer" src="img/about-us.png">
+            <!-- <h3>Images</h3>
+            <ul>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/1/"></li>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/2/"></li>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/3/"></li>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/4/"></li>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/5/"></li>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/6/"></li>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/7/"></li>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/8/"></li>
+            </ul> -->
+        </div>
+
+
+        <div class="widget follow" id="follow">
+            <h3>Follow</h3>
+
+
+            <!-- <ul>
+                <li>
+                    <a class="ion ion-social-facebook" href="#">Facebook</a>
+                </li>
+
+
+                <li>
+                    <a class="ion ion-social-twitter" href="#">Twitter</a>
+                </li>
+
+
+                <li>
+                    <a class="ion ion-social-instagram" href="#">Instagram</a>
+                </li>
+
+
+                <li>
+                    <a class="ion ion-social-dribbble-outline" href="#">Dribbble</a>
+                </li>
+
+
+                <li>
+                    <a class="ion ion-social-github" href="#">Github</a>
+                </li>
+            </ul> -->
+        </div>
+    </div>
+    <!-- <span class="ion ion-arrow-left-c" id="pointer">Click Here</span> -->
+</div>
+<!--container-->
+
+<!-- <div class="slideUp">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+</div>
+
+<div class="slideUp">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+</div>
+
+<div class="slideUp">
+  test Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+</div> -->
+
+
+    <!--script src="js/app.js"></script-->
+    <script src="js/velocity.min.js"></script>
+    <script src="js/velocity.ui.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fastclick.js"></script>
+
+     <script src="GAPlugin.js"></script>
+      <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+
+
+
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/indsumm.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+
+        <script type="text/javascript">
+
+        function onDeviceReady() {
+            // Fast-click to elliminate the delay of 300ms
+            FastClick.attach(document.body);
+        }
+        </script>
+
+
+
+    </body>
+</html>
