@@ -40,7 +40,6 @@
       $hvmenupointBtn = $('#hv-menu-point-Btn');
       
         $hvmenupointBtn.on('click', function() {
-        console.log("hv point menu");
         var isOpen = $hvmenupointDiv.is(':visible'),
             slideDir = isOpen ? 'slideUp' : 'slideDown',
             dur = isOpen ? 200 : 400;
@@ -67,18 +66,18 @@
     });
 
       //HOBSONVILLE POINT MENU
-      //ENTREE
+      //STARTERS
 
-      var $entreeBtn = $('#entree'),
-      $entreeList = $entreeBtn.next('ul');
+      var $startersBtn = $('#starters'),
+      $startersList = $startersBtn.next('ul');
       // entreeText = $entreeBtn.text();
 
-      $entreeBtn.on('click', function() {
-        var isOpen = $entreeList.is(':visible'),
+      $startersBtn.on('click', function() {
+        var isOpen = $startersList.is(':visible'),
             slideDir = isOpen ? 'slideUp' : 'slideDown',
             //entreeBtnText = isOpen ? entreeText : 'Entree',
             dur = isOpen ? 200 : 400;
-        $entreeList.velocity(slideDir, {
+        $startersList.velocity(slideDir, {
           easing: 'easeOutQuart', 
           duration: dur,
           // complete: function() {
@@ -87,6 +86,102 @@
         });
       });
 
+      //Main Course
+      var $mainCourseBtn = $('#mainCourse'),
+      $maincourseList = $mainCourseBtn.next('ul');
+      $mainCourseBtn.on('click', function() {
+        var isOpen = $maincourseList.is(':visible'),
+            slideDir = isOpen ? 'slideUp' : 'slideDown',
+            dur = isOpen ? 200 : 400;
+        $maincourseList.velocity(slideDir, {
+          easing: 'easeOutQuart', 
+          duration: dur,
+        });
+      });
+
+      //Breads and Side Dishes
+      var $breadssideDishesBtn = $('#breadssideDishes'),
+      $breadssideDishesList = $breadssideDishesBtn.next('ul');
+      $breadssideDishesBtn.on('click', function() {
+        var isOpen = $breadssideDishesList.is(':visible'),
+            slideDir = isOpen ? 'slideUp' : 'slideDown',
+            dur = isOpen ? 200 : 400;
+        $breadssideDishesList.velocity(slideDir, {
+          easing: 'easeOutQuart', 
+          duration: dur,
+        });
+      });
+
+      //ENTREE
+      var $entreeBtn = $('#entree'),
+      $entreeList = $entreeBtn.next('ul');
+
+      $entreeBtn.on('click', function() {
+        var isOpen = $entreeList.is(':visible'),
+            slideDir = isOpen ? 'slideUp' : 'slideDown',
+            dur = isOpen ? 200 : 400;
+        $entreeList.velocity(slideDir, {
+          easing: 'easeOutQuart', 
+          duration: dur,
+        });
+      });
+      //Non Veg
+      var $nonvegHvpBtn = $('#nonveg-Hvp'),
+      $nonvegHvpList = $nonvegHvpBtn.next('ul');
+
+      $nonvegHvpBtn.on('click', function() {
+        var isOpen = $nonvegHvpList.is(':visible'),
+            slideDir = isOpen ? 'slideUp' : 'slideDown',
+            dur = isOpen ? 200 : 400;
+        $nonvegHvpList.velocity(slideDir, {
+          easing: 'easeOutQuart', 
+          duration: dur,
+        });
+      });
+
+      //Non Veg
+      var $vegetarianHvpBtn = $('#vegetarian-Hvp'),
+      $vegetarianHvpList = $vegetarianHvpBtn.next('ul');
+
+      $vegetarianHvpBtn.on('click', function() {
+        var isOpen = $vegetarianHvpList.is(':visible'),
+            slideDir = isOpen ? 'slideUp' : 'slideDown',
+            dur = isOpen ? 200 : 400;
+        $vegetarianHvpList.velocity(slideDir, {
+          easing: 'easeOutQuart', 
+          duration: dur,
+        });
+      });
+      //Breads and Side Dishes
+      var $breadssidedishesDinnerBtn = $('#breadssidedishesDinner'),
+      $breadssidedishesDinnerList = $breadssidedishesDinnerBtn.next('ul');
+      $breadssidedishesDinnerBtn.on('click', function() {
+        var isOpen = $breadssidedishesDinnerList.is(':visible'),
+            slideDir = isOpen ? 'slideUp' : 'slideDown',
+            dur = isOpen ? 200 : 400;
+        $breadssidedishesDinnerList.velocity(slideDir, {
+          easing: 'easeOutQuart', 
+          duration: dur,
+        });
+      });
+
+      //HOBSONVILLE MENU
+      
+      //ENTREE
+      var $entreehvBtn = $('#entree-hv'),
+      $entreeListhv = $entreehvBtn.next('ul');
+      
+      $entreehvBtn.on('click', function() {
+      console.log("hov ve menu");
+        var isOpen = $entreeListhv.is(':visible'),
+            slideDir = isOpen ? 'slideUp' : 'slideDown',
+            dur = isOpen ? 200 : 400;
+        $entreeListhv.velocity(slideDir, {
+          easing: 'easeOutQuart', 
+          duration: dur,
+        });
+      });
+      
       //CHEF-SPECIAL
       var $chefSpecialBtn = $('#chefSpecial'),
       $chefSpecialList = $chefSpecialBtn.next('ul');
@@ -102,25 +197,12 @@
       });
     });
 
-
-      //HOBSONVILLE MENU
-      //ENTREE
-
-      var $entreehvBtn = $('#entree-hv'),
-      $entreeListhv = $entreehvBtn.next('ul');
-      
-      $entreehvBtn.on('click', function() {
-      console.log("hov ve menu");
-        var isOpen = $entreeListhv.is(':visible'),
-            slideDir = isOpen ? 'slideUp' : 'slideDown',
-            dur = isOpen ? 200 : 400;
-        $entreeListhv.velocity(slideDir, {
-          easing: 'easeOutQuart', 
-          duration: dur,
-        });
+      //Back to top link
+      $top = $('#top')
+      $top.on('click', function(){
+        console.log("top clicked");
+        // $top.velocity({opacity: 0}, {display:"none"});
       });
-
-  
 })();
   
 
