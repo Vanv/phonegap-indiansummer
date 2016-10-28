@@ -1,35 +1,108 @@
-//Hamburger menu 
-// var menuBoolean = false;
-// var menuWidthThird = $('.off-canvas').width() / $('.menu-element').length;
-
-// $('.nav-wrapper').click(function(ev) {
-//       $('#nav-trigger-anim').toggleClass('active');
-//       if (menuBoolean == false) {
-//             menuAnimIn($('.container'), menuWidthThird);
-//             menuBoolean = true;
-//       } else {
-//             menuAnimIn($('.container'), 0);
-//             menuBoolean = false;
-//       }
-// });
-
-// $('.seemore').click(function(ev) {
-//   if  ($('.container').offset().left != $('.off-canvas').width())
-//   {
-//     var currentLoc = $('.container').offset().left;
-//     menuAnimIn($('.container'), currentLoc + menuWidthThird); 
-//   }
-// });
-
-// function menuAnimIn(obj, fromLeft) {
-//       $(obj).velocity({
-//             left: fromLeft
-//       }, {
-//             easing: 'easeInSine'
-//       })
-// }
-//Hamburger menu - END
-
+//Menu offcanvas
+$('#pointer').velocity({
+    translateX: "10px"
+  }, {
+    loop: true
+  }).velocity("reverse");
+  var offCanvasIn = [{
+    e: $("#offcanvas"),
+    p: {
+      translateX: [0, "-100%"]
+    },
+    o: {
+      duration: 150
+    }
+  }, {
+    e: $("#about"),
+    p: {
+      translateX: [0, "-10px"],
+      opacity: [1, 0]
+    },
+    o: {
+      duration: 150
+    }
+  }, {
+    e: $("#images"),
+    p: {
+      translateX: [0, "-10px"],
+      opacity: [1, 0]
+    },
+    o: {
+      duration: 150
+    }
+  }, {
+    e: $("#follow"),
+    p: {
+      translateX: [0, "-10px"],
+      opacity: [1, 0]
+    },
+    o: {
+      duration: 150
+    }
+  }, {
+    e: $("#close"),
+    p: {
+      translateY: [0, "-100%"],
+      rotateZ: ["180deg", 0]
+    },
+    o: {
+      duration: 150
+    }
+  }];
+  var offCanvasOut = [{
+    e: $("#close"),
+    p: {
+      translateY: "-100%",
+      rotateZ: "180deg"
+    },
+    o: {
+      duration: 150
+    }
+  }, {
+    e: $("#about"),
+    p: {
+      translateX: "-10px",
+      opacity: 0
+    },
+    o: {
+      duration: 150
+    }
+  }, {
+    e: $("#images"),
+    p: {
+      translateX: "-10px",
+      opacity: 0
+    },
+    o: {
+      duration: 150
+    }
+  }, {
+    e: $("#follow"),
+    p: {
+      translateX: "-10px",
+      opacity: 0
+    },
+    o: {
+      duration: 150
+    }
+  }, {
+    e: $("#offcanvas"),
+    p: {
+      translateX: "-100%"
+    },
+    o: {
+      duration: 150
+    }
+  }, ];
+  // run the sequence on click
+  $("#open").on('click', function(event) {
+    event.preventDefault();
+    $.Velocity.RunSequence(offCanvasIn);
+  });
+  $("#close").on('click', function(event) {
+    event.preventDefault();
+    $.Velocity.RunSequence(offCanvasOut);
+  });
 
 (function() { 
     
@@ -172,7 +245,6 @@
       $entreeListhv = $entreehvBtn.next('ul');
       
       $entreehvBtn.on('click', function() {
-      console.log("hov ve menu");
         var isOpen = $entreeListhv.is(':visible'),
             slideDir = isOpen ? 'slideUp' : 'slideDown',
             dur = isOpen ? 200 : 400;
@@ -197,14 +269,45 @@
       });
     });
 
-      //Back to top link
-      $top = $('#top')
-      $top.on('click', function(){
-        console.log("top clicked");
-        // $top.velocity({opacity: 0}, {display:"none"});
+    //Hobsonville Breads and Side Dishes
+      var $hvbreadssidedishesDinnerBtn = $('#hv-breadssidedishesDinner'),
+      $hvbreadssidedishesDinnerList = $hvbreadssidedishesDinnerBtn.next('ul');
+      $hvbreadssidedishesDinnerBtn.on('click', function() {
+        var isOpen = $hvbreadssidedishesDinnerList.is(':visible'),
+            slideDir = isOpen ? 'slideUp' : 'slideDown',
+            dur = isOpen ? 200 : 400;
+        $hvbreadssidedishesDinnerList.velocity(slideDir, {
+          easing: 'easeOutQuart', 
+          duration: dur,
+        });
+      });  
+
+    //Hv Main Course
+      var $hvmainCourseBtn = $('#hv-maincourse'),
+      $hvmaincourseList = $hvmainCourseBtn.next('ul');
+      $hvmainCourseBtn.on('click', function() {
+        var isOpen = $hvmaincourseList.is(':visible'),
+            slideDir = isOpen ? 'slideUp' : 'slideDown',
+            dur = isOpen ? 200 : 400;
+        $hvmaincourseList.velocity(slideDir, {
+          easing: 'easeOutQuart', 
+          duration: dur,
+        });
       });
+
+
+
+      //Back to top link
+      // $top = $('#top')
+      // $top.on('click', function(){
+
+      //   // $top.velocity({opacity: 0}, {display:"none"});
+      // });
 })();
   
+  if(isOpen) {
+    $('button')
+  }
 
 //Contact US MODAL
         $('#modalOpen').click(function() {
@@ -215,118 +318,29 @@
           $('.overlay').velocity({translateY: ['0%','50%'] }, {display:"none"});
         });
 
+//Scroll top
+
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
 
 
 
-//Menu offcanvas
-$('#pointer').velocity({
-    translateX: "10px"
-  }, {
-    loop: true
-  }).velocity("reverse");
-  var offCanvasIn = [{
-    e: $("#offcanvas"),
-    p: {
-      translateX: [0, "-100%"]
-    },
-    o: {
-      duration: 300
-    }
-  }, {
-    e: $("#about"),
-    p: {
-      translateX: [0, "-10px"],
-      opacity: [1, 0]
-    },
-    o: {
-      duration: 300
-    }
-  }, {
-    e: $("#images"),
-    p: {
-      translateX: [0, "-10px"],
-      opacity: [1, 0]
-    },
-    o: {
-      duration: 300
-    }
-  }, {
-    e: $("#follow"),
-    p: {
-      translateX: [0, "-10px"],
-      opacity: [1, 0]
-    },
-    o: {
-      duration: 300
-    }
-  }, {
-    e: $("#close"),
-    p: {
-      translateY: [0, "-100%"],
-      rotateZ: ["180deg", 0]
-    },
-    o: {
-      duration: 300
-    }
-  }];
-  var offCanvasOut = [{
-    e: $("#close"),
-    p: {
-      translateY: "-100%",
-      rotateZ: "180deg"
-    },
-    o: {
-      duration: 300
-    }
-  }, {
-    e: $("#about"),
-    p: {
-      translateX: "-10px",
-      opacity: 0
-    },
-    o: {
-      duration: 300
-    }
-  }, {
-    e: $("#images"),
-    p: {
-      translateX: "-10px",
-      opacity: 0
-    },
-    o: {
-      duration: 300
-    }
-  }, {
-    e: $("#follow"),
-    p: {
-      translateX: "-10px",
-      opacity: 0
-    },
-    o: {
-      duration: 300
-    }
-  }, {
-    e: $("#offcanvas"),
-    p: {
-      translateX: "-100%"
-    },
-    o: {
-      duration: 300
-    }
-  }, ];
-  // run the sequence on click
-  $("#open").on('click', function(event) {
-    event.preventDefault();
-    $.Velocity.RunSequence(offCanvasIn);
-  });
-  $("#close").on('click', function(event) {
-    event.preventDefault();
-    $.Velocity.RunSequence(offCanvasOut);
-  });
 
-  $("#contact").on('click', function(event) {
-    event.preventDefault();
-    //$.Velocity.RunSequence(offCanvasOut);
-  });
 
 

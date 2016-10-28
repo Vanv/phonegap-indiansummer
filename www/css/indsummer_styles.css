@@ -1,6 +1,31 @@
 body {
 	background-color: #fff;
 }
+
+h1 {
+  font-size: 5.9vw;
+}
+h2 {
+  font-size: 4.0vh;
+}
+h3 {
+  font-size: 4.2vh;
+}
+h4 {
+  font-size: 3.0vh;
+}
+h5 {
+  font-size: 2.5vh;
+}
+h6 {
+  font-size: 2.0vh;
+}
+
+
+p {
+  font-size: 2vmin;
+}
+
 .container {
 	margin-top: 20px;
 }
@@ -41,18 +66,23 @@ button {
 	padding: 10px;
 	margin-top: 20px;
 }
+.title {
+  text-align: left;
+}
+
 .buyNow a {
 	color: #fff;
 }
 ul.menu-display {
-    margin: 0px !important;  
-  padding: 20px; 
+  margin: 0px !important;  
+  padding: 15px 5px 5px 5px; 
 }
 ul.menu-display li {
   list-style-type: none;
   text-align: left;
   display: block;
-  /*float: left;*/
+font-size: 14px;
+  border-bottom: 1px solid #edecec;
   width: 100%;
 }
 li .item-name {
@@ -63,17 +93,41 @@ li .item-name {
 li .price {
   float: right;
 }
+..panel-title {
+  font-size: 14px;
+}
 .menu-links {
 /*  background-color: #0e2261;*/ /*blue bg*/
   background-color: #ffcb3a; /*yellow bg*/
   color: #0e2261;
-  padding: 10px;
-  margin-top: 15px;
-}
-
-.menu-links {
+  padding: 5px;
+  margin-top: 1px;
+  text-align: left;
+  font-size: 16px;
+  height: 35px;
+  line-height: 30px;
   width: 100%;
 }
+.main-menu-links {
+  background-color: #000; /*blue bg*/
+  color: #fff;
+  padding: 5px 15px;
+  margin-top: 1px;
+  text-align: left;
+  font-size: 17px;
+  width: 100%; 
+}
+.cust-panel {
+  margin: 15px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.cust-panel .panel-heading{
+  background-color: #f44336 !important;
+  color: #fff;
+}
+
 .description {
   float: left;
   margin-bottom: 15px;
@@ -312,7 +366,7 @@ li .price {
 }
 #offcanvas {
   position: absolute;
-  top: -20px;
+  top: 0px;
   left: 0;
   height: auto;
   width: 280px;
@@ -320,7 +374,8 @@ li .price {
   border-right: 1px solid #CCD1D9;
   box-shadow: 3px 3px 0 0 rgba(0,0,0,0.1);
   transform: translateX(-100%);
-  margin-left: -12px;
+  margin-left: -3px;
+  padding-top: 10px;
   z-index: 100;
 }
 #close {
@@ -374,7 +429,7 @@ li .price {
   display: inline-block;
   width: 24px;
   height: 24px;
-  text-align: center;
+  /*text-align: center;*/
   font-size: 16px;
 }
 #pointer {
@@ -416,16 +471,18 @@ li .price {
   
 } 
 #modalOpen {
-    font-size: 12px;
+    /*font-size: 15px;*/
+    font-size: 5vmin;
     background: none;
     padding: 0px 10px;
   }
 #modalClose {
     font-size: 14px;
     margin-top: -20px; 
+    text-align: center;
   }
 .scrollup {
-    background: #ffcb3a;
+    background: #d82625; /*#ffcb3a - yellow*/
     bottom: 82px;
     display: none;
     position: fixed;
@@ -439,7 +496,7 @@ li .price {
     height: 40px;
     text-align: center;
     font-size: 13px;
-    color: #000 !important;
+    color: #fff !important;
     text-transform: uppercase;
     font-weight: 600;
     padding: 5px;
@@ -453,11 +510,27 @@ a.scrollup:active, a.scrollup:focus {
 }
 .subTitle {
   text-align: left;
-  margin: 10px 0px 0px 20px;
+  /*margin: 10px 0px 0px 20px;*/
+}
+.panel-body {
+  padding: 10px;
 }
 
 @media (max-width: 640px) {
+  .menu-links {
+    font-size: 13px;
+  }
   .contact-details p{
     font-size: 12px;
   }
 }  
+.is-arrow-down {
+      float: right;
+    margin: 0px 5px 0px 0px;
+    font-size: 17px;
+    line-height: 30px;
+    height: 35px;
+}
+.main-btn-arrow-down {
+  float: right;
+}

@@ -27,9 +27,36 @@
 
          <link rel="stylesheet" href="css/bootstrap.min.css">
 
-          <!-- Optional theme -->
-          <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <!-- Optional theme -->
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+
+
+
+  <!-- Material Design fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <!-- Bootstrap Material Design -->
+  <link href="css/bootstrap-material-design.min.css" rel="stylesheet">
+  <!-- <link href="css/ripples.min.css" rel="stylesheet"> -->
+
+
+
+
+
+
+
+        <!-- Material Design fonts -->
+<!--         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons"> -->
+        <!-- Bootstrap Material Design -->
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.material-design/4.0.2/bootstrap-material-design.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="dist/css/ripples.min.css"> -->
+
+        <!--Custom CSS-->  
         <link rel="stylesheet" type="text/css" href="css/indsummer_styles.css" />
         <script src="js/jquery.min.js"></script>
         <title>Indian Summer</title>
@@ -37,7 +64,69 @@
 
     </head>
     <body> <!--onload="init()"-->
+        <div id="offcanvas">
+        <a class="ion ion-close" href="#" id="close"></a>
 
+        <div class="widget" id="about">  
+           
+                <!-- <a id="hvp-menu" href="#">HVP Menu</a> -->
+                
+           
+            <h3>About Us</h3>
+
+
+            <p>To make your visit memorable, the menu has been compiled under my personal supervision to place at your disposal a choice of delicately prepared and pleasingly tasty dishes having the aroma and flavour of Indian spices made to perfection.</p>
+
+            <p>Let the mystic environment of Indian Summer blend with your valued presence.</p>
+        </div>
+
+        <div class="widget image" id="images">
+            <img alt="Indian Summer" src="img/about-us.png">
+            <!-- <h3>Images</h3>
+            <ul>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/1/"></li>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/2/"></li>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/3/"></li>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/4/"></li>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/5/"></li>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/6/"></li>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/7/"></li>
+                <li><img alt="" src="http://lorempixel.com/50/50/cats/8/"></li>
+            </ul> -->
+        </div>
+
+
+        <div class="widget follow" id="follow">
+            <h3></h3>
+
+
+            <!-- <ul>
+                <li>
+                    <a class="ion ion-social-facebook" href="#">Facebook</a>
+                </li>
+
+
+                <li>
+                    <a class="ion ion-social-twitter" href="#">Twitter</a>
+                </li>
+
+
+                <li>
+                    <a class="ion ion-social-instagram" href="#">Instagram</a>
+                </li>
+
+
+                <li>
+                    <a class="ion ion-social-dribbble-outline" href="#">Dribbble</a>
+                </li>
+
+
+                <li>
+                    <a class="ion ion-social-github" href="#">Github</a>
+                </li>
+            </ul> -->
+        </div>
+        </div><!--offcanvas-->
 <div class="container">
     <div class="demo-content" id="content">
         <div>
@@ -47,7 +136,7 @@
             <div class="fb-icon text-right">
             <!-- <button id="contactLink" class="link">Contact Us</button> -->
             
-                <button id="modalOpen">Contact Us</button>
+                <button id="modalOpen"><span class="ion-ios-telephone" data-pack="ios" data-tags="oldschool, call"></span></button>
                 <a class="ion ion-social-facebook" target="_blank" href="https://www.facebook.com/indsummerNZ/"></a>
             </div>         
         </div>
@@ -57,20 +146,64 @@
         <div id="page1" class="col-xs-12 text-center">
             <div class="top_banner"><img class="img-responsive" src="img/IndianSummer-logo-e.png">
             </div>
+            <!---->
+               <!--  <div class="bs-example">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">1. What is HTML?</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages. <a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">2. What is Bootstrap?</a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Bootstrap is a powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <p><strong>Note:</strong> Click on the linked heading text to expand or collapse accordion panels.</p>
+                </div> -->
 
+            <!---->
 
             <div class="journeyText">
                 A Journey through food
             </div>
             <!-- <h2>Menu</h2> -->
-            <h4 class="title"><button id="hv-menu-point-Btn">Hobsonville Point Menu</button></h4>
+            <!-- <h4 class="title"><button id="hv-menu-point-Btn">Hobsonville Point Menu</button></h4> -->
+            <button id="hv-menu-Btn" class="main-menu-links">Hobsonville Point Menu</button>
+            <!--<div class="ion ion-arrow-down-b is-arrow-down main-btn-arrow-down "></div>-->
             <div id="hobsonville-point-menu" style="display: none;">
-                <h4 class="subTitle">Express Lunch Menu</h4>
-                <div class="starters">
+                
+            </div><!--hobsonville-point-menu-->
+      
+            <div class="panel panel-warning cust-panel">
+                <div class="panel-heading">
+                  <!-- <h3 class="panel-title">Panel success</h3> -->
+                  <h3 class="panel-title subTitle">Express Lunch Menu</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="starters">
                     <div class="dropdown-container">
                         <!-- <button id="entree" class="menu-links">Entree</button> -->
-                        <button id="starters" class="menu-links">Starters</button>
-                        <ul class="menu-display" style="display:none;">
+                        <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                        <button id="starters" class="menu-links" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Starters<div class="ion ion-arrow-down-b is-arrow-down"></div></button>
+                        <ul id="collapseOne" class="menu-display panel-collapse collapse in" style="display:none;">
                             <li>
                                 <div class="item-name"><b>Onion Bhajiyas</b><span class="price">$6.00</span></div>
                                 <div class="description">Crispy batter fried sliced onions.</div>
@@ -93,92 +226,101 @@
                             </li>
 
                         </ul>
-                    </div>
-                </div>
+                        </div><!--panel-default-->
+                    </div> <!--dropdown-contai-->
+                </div><!--starters-->
                 <!--Express Lunch Main Course -->
-                <div class="mainCourse">
-                    <div class="dropdown-container">
+                    <div class="mainCourse">
+                        <div class="dropdown-container">
 
-                        <!-- <button id="entree" class="menu-links">Entree</button> -->
-                        <button id="mainCourse" class="menu-links">Main Course</button>
+                            <!-- <button id="entree" class="menu-links">Entree</button> -->
+                            <button id="mainCourse" class="menu-links" href="#collapseTwo" data-toggle="collapse" data-parent="#accordion">Main Course<div class="ion ion-arrow-down-b is-arrow-down"></div></button>
 
-                        <ul class="menu-display" style="display:none;">
-                            <li><b class="text-right">Any Curry with Rice and Plain Nan - $11.90</b></li><br>
-                            <li>
-                                <div class="item-name"><b>Butter Chicken</b></div>
-                                <div class="description">Boneless chicken simmered in the heavenly blend of spices with a smooth and creamy tomato gravy.</div>
-                            </li>
-                            <li>
-                                <div class="item-name"><b>Chicken Tikka Masala</b></div>
-                                <div class="description">Boneless chicken tikka pieces cooked in a rich gravy.</div>
-                            </li>
-                            <li>
-                                <div class="item-name"><b>Lamb Rogan Josh</b></div>
-                                <div class="description">A fine delicacy from Kashmir which derives its name from red kashmiri chillies.</div>
-                            </li>
-                            <li>
-                                <div class="item-name"><b>Beef Korma</b></div>
-                                <div class="description">Slow cooked pieces of beef in a rich cashew and onion tomato gravy. </div>
-                            </li>
-                            <li>
-                                <div class="item-name"><b>Palak Panner</b></div>
-                                <div class="description">Cottage cheese cooked in spinach based gravy with fresh indian spices. </div>
-                            </li>
-                            <li>
-                                <div class="item-name"><b>Chettinad Potato Fry</b></div>
-                                <div class="description">Potatoes and onions cooked with roasted spices and tempered.</div>
-                            </li>
+                            <ul id="collapseTwo" class="menu-display panel-collapse collapse in" style="display:none;">
+                                <li><b class="text-right">Any Curry with Rice and Plain Nan - $11.90</b></li><br>
+                                <li>
+                                    <div class="item-name"><b>Butter Chicken</b></div>
+                                    <div class="description">Boneless chicken simmered in the heavenly blend of spices with a smooth and creamy tomato gravy.</div>
+                                </li>
+                                <li>
+                                    <div class="item-name"><b>Chicken Tikka Masala</b></div>
+                                    <div class="description">Boneless chicken tikka pieces cooked in a rich gravy.</div>
+                                </li>
+                                <li>
+                                    <div class="item-name"><b>Lamb Rogan Josh</b></div>
+                                    <div class="description">A fine delicacy from Kashmir which derives its name from red kashmiri chillies.</div>
+                                </li>
+                                <li>
+                                    <div class="item-name"><b>Beef Korma</b></div>
+                                    <div class="description">Slow cooked pieces of beef in a rich cashew and onion tomato gravy. </div>
+                                </li>
+                                <li>
+                                    <div class="item-name"><b>Palak Panner</b></div>
+                                    <div class="description">Cottage cheese cooked in spinach based gravy with fresh indian spices. </div>
+                                </li>
+                                <li>
+                                    <div class="item-name"><b>Chettinad Potato Fry</b></div>
+                                    <div class="description">Potatoes and onions cooked with roasted spices and tempered.</div>
+                                </li>
 
-                        </ul>
+                            </ul>
+                        </div>
+                    </div><!--mainCourse-->
+                    </div><!--accordion-->
+                    <div class="breadssideDishes">
+                        <div class="dropdown-container">
+
+                            <!-- <button id="entree" class="menu-links">Entree</button> -->
+                            <button id="breadssideDishes" class="menu-links">Breads and Side Dishes<div class="ion ion-arrow-down-b is-arrow-down"></div></button>
+
+                            <ul class="menu-display" style="display:none;">
+                                <li>
+                                    <div class="item-name"><b>Plain Naan</b><span class="price">$3.00</span></div>
+                                </li>
+                                <li>
+                                    <div class="item-name"><b>Garlic Naan</b><span class="price">$3.50</span></div>
+                                </li>
+                                <li>
+                                    <div class="item-name"><b>Cheese Naan</b><span class="price">$4.00</span></div>
+                                </li>
+                                <li>
+                                    <div class="item-name"><b>Cheese and Garlic Naan</b><span class="price">$4.50</span></div>
+                                </li>
+                                <li>
+                                    <div class="item-name"><b>Peshawari Naan</b><span class="price">$4.50</span></div>
+                                </li>
+
+                                <li>
+                                    <div class="item-name"><b>Pickle</b><span class="price">$3.50</span></div>
+                                </li>
+                                <li>
+                                    <div class="item-name"><b>Mango Chutney</b><span class="price">$3.50</span></div>
+                                </li>
+                                <li>
+                                    <div class="item-name"><b>Raita</b><span class="price">$4.00</span></div>
+                                </li>
+                                <li>
+                                    <div class="item-name"><b>Papad (2pc)</b><span class="price">$1.00</span></div>
+                                </li>
+
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="breadssideDishes">
-                    <div class="dropdown-container">
+                </div><!--panel-body-->
+              </div><!--panel panel-warning cust-panel-->
 
-                        <!-- <button id="entree" class="menu-links">Entree</button> -->
-                        <button id="breadssideDishes" class="menu-links">Breads and Side Dishes</button>
-
-                        <ul class="menu-display" style="display:none;">
-                            <li>
-                                <div class="item-name"><b>Plain Naan</b><span class="price">$3.00</span></div>
-                            </li>
-                            <li>
-                                <div class="item-name"><b>Garlic Naan</b><span class="price">$3.50</span></div>
-                            </li>
-                            <li>
-                                <div class="item-name"><b>Cheese Naan</b><span class="price">$4.00</span></div>
-                            </li>
-                            <li>
-                                <div class="item-name"><b>Cheese and Garlic Naan</b><span class="price">$4.50</span></div>
-                            </li>
-                            <li>
-                                <div class="item-name"><b>Peshawari Naan</b><span class="price">$4.50</span></div>
-                            </li>
-
-                            <li>
-                                <div class="item-name"><b>Pickle</b><span class="price">$3.50</span></div>
-                            </li>
-                            <li>
-                                <div class="item-name"><b>Mango Chutney</b><span class="price">$3.50</span></div>
-                            </li>
-                            <li>
-                                <div class="item-name"><b>Raita</b><span class="price">$4.00</span></div>
-                            </li>
-                            <li>
-                                <div class="item-name"><b>Papad (2pc)</b><span class="price">$1.00</span></div>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
 
                 <!--HOBSONVILLE POINT DINNER MENU STARTS HERE-->
-                <h4 class="subTitle">Dinner Menu</h4>
-                <div class="entree">
+                <div class="panel panel-warning cust-panel">
+                        <div class="panel-heading">
+                          <!-- <h3 class="panel-title">Panel success</h3> -->
+                          <h3 class="panel-title subTitle">Dinner Menu</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="entree">
                     <div class="dropdown-container">
                         <!-- <button id="entree" class="menu-links">Entree</button> -->
-                        <button id="entree" class="menu-links">Entree</button>
+                        <button id="entree" class="menu-links">Entree<div class="ion ion-arrow-down-b is-arrow-down"></div></button>
                         <ul class="menu-display" style="display:none;">
                             <li>
                                 <div class="item-name"><b>Onion Bhajiyas</b><span class="price">$6.00</span></div>
@@ -223,14 +365,14 @@
 
                         </ul>
                     </div>
-                </div>
+                </div><!--entree - dinner menu-->
 
 
 
                 <div class="nonveg-Hvp">
                     <div class="dropdown-container">
                         <!-- <button id="entree" class="menu-links">Entree</button> -->
-                        <button id="nonveg-Hvp" class="menu-links">Non Veg</button>
+                        <button id="nonveg-Hvp" class="menu-links">Non Veg<div class="ion ion-arrow-down-b is-arrow-down"></div></button>
                         <ul class="menu-display" style="display:none;">
                             <li>
                                 <div class="item-name"><b>Butter Chicken</b><span class="price">$6.00</span></div>
@@ -292,7 +434,7 @@
                 <div class="vegetarian-Hvp">
                     <div class="dropdown-container">
                         <!-- <button id="entree" class="menu-links">Entree</button> -->
-                        <button id="vegetarian-Hvp" class="menu-links">Vegetarian</button>
+                        <button id="vegetarian-Hvp" class="menu-links">Vegetarian<div class="ion ion-arrow-down-b is-arrow-down"></div></button>
                         <ul class="menu-display" style="display:none;">
                             <li>
                                 <div class="item-name"><b>Mixed Vegetable Korma</b><span class="price">$15.50</span></div>
@@ -329,7 +471,7 @@
                     <div class="dropdown-container">
 
                         <!-- <button id="entree" class="menu-links">Entree</button> -->
-                        <button id="breadssidedishesDinner" class="menu-links">Bread And Rice Dishes</button>
+                        <button id="breadssidedishesDinner" class="menu-links">Bread And Rice Dishes<div class="ion ion-arrow-down-b is-arrow-down"></div></button>
 
                         <ul class="menu-display" style="display:none;">
                             <li>
@@ -399,21 +541,31 @@
 
                         </ul>
                     </div>
-                </div>
+                </div><!--breadssidedishesDinner-->
+                        </div>
+                </div>        
+                
 
-            </div><!--hobsonville-point-menu-->
+         
 
             <div class="clear"></div>
 
 
 
 
-            <h4 class="title"><button id="hv-menu-Btn">Hobsonville Menu</button></h4>
+            <button id="hv-menu-Btn" class="main-menu-links">Hobsonville Menu</button>
             <div id="hobsonville-menu" style="display:none;">
-                <div class="entree-hv">
+            </div><!--hobsonville-menu--> 
+            <div class="panel panel-warning cust-panel">
+                        <div class="panel-heading">
+                          <!-- <h3 class="panel-title">Panel success</h3> -->
+                          <h3 class="panel-title subTitle">Dinner Menu</h3>
+                        </div>
+                        <div class="panel-body">
+                                <div class="entree-hv">
                     <div class="dropdown-container">
                         <!-- <button id="entree" class="menu-links">Entree</button> -->
-                        <button id="entree-hv" class="menu-links">Entree Hv menu</button>
+                        <button id="entree-hv" class="menu-links">Entree<div class="ion ion-arrow-down-b is-arrow-down"></div></button>
                         <ul class="menu-display" style="display:none;">
                             <li>
                                 <div class="item-name"><b>Vegetable Samosa</b><span class="price">$6.00</span></div>
@@ -462,7 +614,7 @@ Chicken tikka and seekh kebab.</div>
                 </div>
                  <div class="chefSpecial">
                     <div class="dropdown-container">
-                        <button id="chefSpecial" class="menu-links">Chef's Special</button>
+                        <button id="chefSpecial" class="menu-links">Chef's Special<div class="ion ion-arrow-down-b is-arrow-down"></div></button>
 
                         <ul class="menu-display" style="display:none;">
                             <li>
@@ -517,7 +669,227 @@ for those who like it hot.</div>
                         </ul>
                     </div>
                 </div>
-             </div> 
+                <div class="hv-maincourse">
+                    <div class="dropdown-container">
+                        <button id="hv-maincourse" class="menu-links">Main Course<div class="ion ion-arrow-down-b is-arrow-down"></div></button>
+                         <ul class="menu-display" style="display:none;">
+                            <li>
+                                <div class="item-name"><b>Butter Chicken</b><span class="price">$18.50</span></div>
+                                <div class="description">All time favourite</div>
+                            </li>
+                             <li>
+                                <div class="item-name"><b>Chicken Tikka Masala</b><span class="price">$18.50</span></div>
+                                <div class="description">Boneless chicken half cooked in tandoori, finish in pan<br>
+                with capsicum, onion and masala gravy.</div>
+                            </li>
+                             <li>
+                                <div class="item-name"><b>Chicken Saag</b><span class="price">$18.50</span></div>
+                                <div class="description">Chicken cooked with spinach.</div>
+                            </li>
+                             <li>
+                                <div class="item-name"><b>Chicken Korma</b><span class="price">$18.50</span></div>
+                                <div class="description">Chicken cooked in cashew nut gravy.</div>
+                            </li>
+
+                             <li>
+                                <div class="item-name"><b>Lamb Rogan Josh</b><span class="price">$18.50</span></div>
+                                <div class="description">Traditional lamb curry.</div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Lamb Saag</b><span class="price">$18.50</span></div>
+                                <div class="description">Lamb cooked in spinach gravy.</div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Lamb Korma</b><span class="price">$18.50</span></div>
+                                <div class="description">Lamb cooked in cashew nut gravy.</div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Lamb Vindaloo</b><span class="price">$18.50</span></div>
+                                <div class="description">Traditional spicy and hot Goan dish.</div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Beeg Vindaloo</b><span class="price">$18.50</span></div>
+                                <div class="description">Traditional spicy and hot Goan dish.</div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Beef Korma</b><span class="price">$18.50</span></div>
+                                <div class="description">Beef cooked in cashew nut gravy.</div>
+                            </li>
+                             <li>
+                                <div class="item-name"><b>Fish Moilee</b><span class="price">$18.00</span></div>
+                                <div class="description">Traditional South Indian curry, fish cooked in coconut gravy.</div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Goat Curry</b><span class="price">$18.50</span></div>
+                                <div class="description">Spicy tender goat curry cooked with bones.</div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Prawn Malai Curry</b><span class="price">$19.50</span></div>
+                                <div class="description">Traditional Bengali dish. Prawn cooked with potatoes.</div>
+                            </li>
+                             <li>
+                                <div class="item-name"><b>Butter Prawn</b><span class="price">$19.50</span></div>
+                                <div class="description">Prawn cooked with mild tomato and cream based curry.</div>
+                            </li>
+                             <li>
+                                <div class="item-name"><b>Kadai Prawn</b><span class="price">$19.50</span></div>
+                                <div class="description">Prawn cooked with capsicum, onion and whole ground spice.</div>
+                            </li>
+                             <li>
+                                <div class="item-name"><b>Prawn Patia</b><span class="price">$19.50</span></div>
+                                <div class="description">Fruit flavoured prawn cooked in fresh ground spices and coriander.</div>
+                            </li>
+
+                             <li>
+                                <div class="item-name"><b>Tandoori Chicken</b><span class="price">full $19.50<br>
+                half $12.00</span></div>
+                                <div class="description">Chicken marinated with lemon and spice and cooked in<br>
+                Tandoori Oven.</div>
+                            </li>
+                             <li>
+                                <div class="item-name"><b>Tandoori Prawns</b><span class="price">$19.50</span></div>
+                                <div class="description">Prawns marinated with lemon, spice and cooked in<br>
+                Tandoori Oven.</div>
+                            </li>
+                             <li>
+                                <div class="item-name"><b>Lamb Chops</b><span class="price">$18.50</span></div>
+                                <div class="description">Lamb chops marinated with an exotic flavour of<br>
+                fruits and spices.</div>
+                            </li>
+                             <li>
+                                <div class="item-name"><b>Sabzi Bahar</b><span class="price">$13.50</span></div>
+                                <div class="description">Mix vegetables cooked in selected spices.</div>
+                            </li>
+                             
+                            <li>
+                                <div class="item-name"><b>Vegetable Korma</b><span class="price">$14.50</span></div>
+                                <div class="description">Mixed vegetables cooked in cashew nut based gravy.</div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Palak Paneer</b><span class="price">$15.00</span></div>
+                                <div class="description">Homemade cottage chesse cooked in spinach.</div>
+                            </li>
+                             
+                            <li>
+                                <div class="item-name"><b>Paneer Tikka Masala</b><span class="price">$15.00</span></div>
+                                <div class="description">Paneer cooked in selected spices finished with capsicum,<br>
+                onion and masala gravy.</div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Kabuli Channa</b><span class="price">$13.00</span></div>
+                                <div class="description">Chick peas cooked in Punjabi style.</div>
+                            </li>
+                             
+                            <li>
+                                <div class="item-name"><b>Dhal Makhani</b><span class="price">$13.00</span></div>
+                                <div class="description">Lentils simmered overnight with spices finished with<br>
+                cream.</div>
+                            </li>
+                             <li>
+                                <div class="item-name"><b>Yellow Dhal</b><span class="price">$13.00</span></div>
+                                <div class="description">Yellow lentils cooked and finished with onion and garlic.</div>
+                            </li>
+                             
+                            <li>
+                                <div class="item-name"><b>Aloo Jeera</b><span class="price">$12.50</span></div>
+                                <div class="description">Cubes of potato tempered with cumin seed and herbs.</div>
+                            </li>
+                             <li>
+                                <div class="item-name"><b>Bhindi Masala</b><span class="price">$16.50</span></div>
+                                <div class="description">Okra cooked with onion and spices.</div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="hv-breadssidedishesDinner">
+                    <div class="dropdown-container">
+
+                        <!-- <button id="entree" class="menu-links">Entree</button> -->
+                        <button id="hv-breadssidedishesDinner" class="menu-links">Bread And Rice Dishes<div class="ion ion-arrow-down-b is-arrow-down"></div></button>
+
+                        <ul class="menu-display" style="display:none;">
+                            <li>
+                                <div class="item-name"><b>Roti</b><span class="price">$3.00</span></div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Naan</b><span class="price">$3.00</span></div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Garlic Naan</b><span class="price">$3.50</span></div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Keema Naan</b><span class="price">$4.50</span></div>
+                            </li>
+                             <li>
+                                <div class="item-name"><b>Peshawari Naan</b><span class="price">$4.50</span></div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Cheese Naan</b><span class="price">$4.00</span></div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Panner Kulcha</b><span class="price">$4.50</span></div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Cheese and Onion Kulcha</b><span class="price">$4.50</span></div>
+                            </li>
+          
+                            <br>
+                         
+                            <li>
+                                <div class="item-name"><b>Chicken / Lamb Biryani</b><span class="price">$18.00</span></div>
+                                <div class="description">Chicken/lamb cooked with spices in saffron<br>
+                flavoured rice.</div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Vegetable Biryani</b><span class="price">$15.00</span></div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Pulao Rice</b><span class="price">$4.00</span></div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Basmati Rice (Per Person)</b><span class="price">$1.00</span></div>
+                            </li>
+
+                             <li>
+                                <div class="item-name"><b>Kuchumber Salad</b><span class="price">$4.00</span></div>
+                            </li> 
+                           
+                            <li>
+                                <div class="item-name"><b>Mixed veg Pickles</b><span class="price">$3.50</span></div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Mango Chutney</b><span class="price">$3.50</span></div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Cucumber Raita</b><span class="price">$4.00</span></div>
+                            </li>
+
+                            <li>
+                                <div class="item-name"><b>Side dish Platter</b><span class="price">$7.50</span></div>
+                            </li>
+                            <li>
+                                <div class="item-name"><b>Papad (2pc)</b><span class="price">$1.00</span></div>
+                            </li>
+
+                            <li>
+                                <div class="item-name"><b>Bean Sprout Salad</b><span class="price">$5.00</span></div>
+                            </li>
+                            <br><br>
+                            <li>
+                                <div class="item-name"><b>Banquet</b><span class="price"></span></div>
+                                <div class="description">Banquet available please check with our friendly staff.</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div><!--hv-breadssidedishesDinner-->
+
+            </div><!--panel-body-->
+        </div><!--panel panel-warning cust-panel-->       
+                
+             
 
              <div id="top"><a class="scrollup ion ion-arrow-up-c" href="#" style="display: inline;"><i class="fa fa-angle-up"></i><br>Top</a></div>
             
@@ -549,7 +921,7 @@ for those who like it hot.</div>
                     <p>We are open 7 days for Lunch and Dinner.<br>
                     <b>Lunch hours</b> – 11.30am to 2.30pm<br>
                     <b>Dinner hours</b> – 5pm till late<br>
-                    <b>Contact no</b> – 020 4113 2550 or 021 139 8407   </p>
+                    <b>Contact no</b> – 09 972 4952, 09 972 4957   </p>
 
 
                                     
@@ -569,75 +941,14 @@ for those who like it hot.</div>
                 Text goes here
             </div>
         </div>
-
-
+             
          
     </div>
 
-
-    <div id="offcanvas">
-        <a class="ion ion-close" href="#" id="close"></a>
-
-        <div class="widget" id="about">  
-           
-                <!-- <a id="hvp-menu" href="#">HVP Menu</a> -->
-                
-           
-            <h3>About Us</h3>
+    
 
 
-            <p>To make your visit memorable, the menu has been compiled under my personal supervision to place at your disposal a choice of delicately prepared and pleasingly tasty dishes having the aroma and flavour of Indian spices made to perfection.</p>
-
-            <p>Let the mystic environment of Indian Summer blend with your valued presence.</p>
-        </div>
-
-        <div class="widget image" id="images">
-            <img alt="Indian Summer" src="img/about-us.png">
-            <!-- <h3>Images</h3>
-            <ul>
-                <li><img alt="" src="http://lorempixel.com/50/50/cats/1/"></li>
-                <li><img alt="" src="http://lorempixel.com/50/50/cats/2/"></li>
-                <li><img alt="" src="http://lorempixel.com/50/50/cats/3/"></li>
-                <li><img alt="" src="http://lorempixel.com/50/50/cats/4/"></li>
-                <li><img alt="" src="http://lorempixel.com/50/50/cats/5/"></li>
-                <li><img alt="" src="http://lorempixel.com/50/50/cats/6/"></li>
-                <li><img alt="" src="http://lorempixel.com/50/50/cats/7/"></li>
-                <li><img alt="" src="http://lorempixel.com/50/50/cats/8/"></li>
-            </ul> -->
-        </div>
-
-
-        <div class="widget follow" id="follow">
-            <h3></h3>
-
-
-            <!-- <ul>
-                <li>
-                    <a class="ion ion-social-facebook" href="#">Facebook</a>
-                </li>
-
-
-                <li>
-                    <a class="ion ion-social-twitter" href="#">Twitter</a>
-                </li>
-
-
-                <li>
-                    <a class="ion ion-social-instagram" href="#">Instagram</a>
-                </li>
-
-
-                <li>
-                    <a class="ion ion-social-dribbble-outline" href="#">Dribbble</a>
-                </li>
-
-
-                <li>
-                    <a class="ion ion-social-github" href="#">Github</a>
-                </li>
-            </ul> -->
-        </div>
-    </div>
+   
     <!-- <span class="ion ion-arrow-left-c" id="pointer">Click Here</span> -->
 </div>
 <!--container-->
@@ -662,17 +973,23 @@ for those who like it hot.</div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/fastclick.js"></script>
 
-     <script src="GAPlugin.js"></script>
+     <!--script src="GAPlugin.js"></script-->
       <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
 
 
 
-        <script type="text/javascript" src="phonegap.js"></script>
+        <!--script type="text/javascript" src="phonegap.js"></script-->
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/indsumm.js"></script>
+
+      <!-- Material Design for Bootstrap -->
+        <script src="js/material.js"></script>
+        <!--script src="js/ripples.min.js"></script-->
+        
         <script type="text/javascript">
             app.initialize();
         </script>
+
 
         <script type="text/javascript">
 
