@@ -21,7 +21,9 @@ h6 {
   font-size: 2.0vh;
 }
 
-
+a:focus, a:hover {
+  text-decoration: none;
+}
 p {
   font-size: 2vmin;
 }
@@ -98,14 +100,13 @@ li .price {
 }
 .menu-links {
 /*  background-color: #0e2261;*/ /*blue bg*/
-  background-color: #ffcb3a; /*yellow bg*/
+  background-color: #ffcb3a !important; /*yellow bg*/
   color: #0e2261;
-  padding: 5px;
+
   margin-top: 1px;
   text-align: left;
   font-size: 16px;
-  height: 30px;
-  line-height: 22px;
+  line-height: 30px;
   width: 100%;
 }
 .main-menu-links {
@@ -123,7 +124,7 @@ li .price {
   margin-bottom: 30px;
 }
 
-.cust-panel .panel-heading{
+.cust-panel .main-heading{
   background-color: #f44336 !important;
   color: #fff;
 }
@@ -458,6 +459,11 @@ li .price {
 .fb-icon a, .ion-navicon:before  {
     color: #d82625 !important;
 }
+.ion-ios-telephone {
+  font-size: 17px;
+  color: #d82625 !important;
+  margin-top: -1px;
+}
 /*Contact Us Modal style*/
 .overlay {
   position: fixed;
@@ -510,11 +516,20 @@ a.scrollup:active, a.scrollup:focus {
 }
 .subTitle {
   text-align: left;
+  font-size: 1.1em;
+  line-height: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
   /*margin: 10px 0px 0px 20px;*/
 }
 .panel-body {
   padding: 10px;
 }
+
+
+
+
+
 
 @media (max-width: 640px) {
   .menu-links {
@@ -525,10 +540,125 @@ a.scrollup:active, a.scrollup:focus {
   }
 }  
 .is-arrow-down {
-  float: right;
-  margin: 3px 5px 0px 0px;
-  font-size: 17px;
+      float: right;
+    margin: 0px 5px 0px 0px;
+    font-size: 17px;
+    line-height: 30px;
+    height: 35px;
 }
 .main-btn-arrow-down {
   float: right;
 }
+
+
+/*NEW CSS*/
+.panel {
+
+  border-bottom: 1px solid #fff; 
+}
+.panel-group > .panel:first-child .panel-heading {
+  border-radius: 4px 4px 0 0;
+}
+
+.panel-group .panel {
+  border-radius: 0;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 0;
+}
+
+/*.panel-heading {
+  background-color: #009688;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  padding: 0;
+}*/
+
+.panel-title a {
+  display: block;
+  padding: 5px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.panel-body {
+  background: #fff;
+}
+
+.panel:last-child .panel-body {
+  border-radius: 0 0 4px 4px;
+}
+
+.panel:last-child .panel-heading {
+  border-radius: 0 0 4px 4px;
+  transition: border-radius 0.3s linear 0.2s;
+}
+
+.panel:last-child .panel-heading.active {
+  border-radius: 0;
+  transition: border-radius linear 0s;
+}
+/* #bs-collapse icon scale option */
+
+/*.panel-heading a:before {
+  content: '\e146';
+  position: absolute;
+  font-family: 'Material Icons';
+  right: 5px;
+  top: 10px;
+  font-size: 24px;
+  transition: all 0.5s;
+  transform: scale(1);
+}*/
+
+/*.panel-heading.active a:before {
+  content: ' ';
+  transition: all 0.5s;
+  transform: scale(0);
+}*/
+
+#bs-collapse .panel-heading a:after {
+  content: ' ';
+  font-size: 24px;
+  position: absolute;
+  font-family: 'Material Icons';
+  right: 5px;
+  top: 10px;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+#bs-collapse .panel-heading.active a:after {
+  content: '\e909';
+  transform: scale(1);
+  transition: all 0.5s;
+}
+/* #accordion rotate icon option */
+
+.panel-heading a:before {
+  content: '\e316';
+  font-size: 24px;
+  position: absolute;
+  font-family: 'Material Icons';
+  right: 5px;
+  top: 0px;
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+#accordion .panel-heading.active a:before,
+#accordion2 .panel-heading.active a:before {
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
+.dinner-menu-title {
+  margin-top: 20px;
+}
+/*
+.panel-heading.active a:before {
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
+*/
