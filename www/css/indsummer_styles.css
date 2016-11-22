@@ -172,7 +172,9 @@ li .price {
   left:0;
   padding: 0px;
 }
-
+#page1 {
+  margin-top: 15px;
+}
 
 #page2 {
   width:200px;
@@ -389,6 +391,14 @@ li .price {
   position: relative;
   z-index: 100;
 }
+.close {
+  color: #d82625;
+  opacity: 1;
+}
+.aboutus_link {
+  color: #fff;
+  line-height: 30px;
+}
 .widget {
   padding: 20px;
   border-bottom: 1px solid #CCD1D9;
@@ -449,21 +459,21 @@ li .price {
 }
 .fb-icon {
   float: right;
-  padding: 15px 10px;
+  padding: 5px;
   color: #d82625 !important;
-  font-size: 17px;
 }
 .fb-icon a:before {
   padding-right: 10px;
 }
-.fb-icon a, .ion-navicon:before  {
-    color: #d82625 !important;
+.fb-icon a, .ion-navicon:before, .ion-ios-telephone  {
+    color: #fff  !important; /* #d82625*/
 }
 .ion-ios-telephone {
-  font-size: 17px;
-  color: #d82625 !important;
   margin-top: -1px;
 }
+.fb-icon , .ion-ios-telephone {
+  font-size: 20px;
+  }
 /*Contact Us Modal style*/
 .overlay {
   position: fixed;
@@ -655,6 +665,10 @@ a.scrollup:active, a.scrollup:focus {
 }
 .dinner-menu-title {
   margin-top: 20px;
+}
+.demo-content {
+  background-color: #000;
+  height: 50px;
 }
 /*
 .panel-heading.active a:before {

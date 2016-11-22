@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.indiansummer" version="0.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.phonegap.indiansummer" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Indian Summer</name>
     <description>
         Journey through Indian Summer Restaurant, menu and much more.
@@ -55,5 +55,6 @@
     <gap:splash gap:platform="ios" height="750" src="res/screen/ios/Splash-1334x750.png" width="1334" />
     <gap:splash gap:platform="ios" height="2208" src="res/screen/ios/Default-736h@3x~iphone.png" width="1242" />
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
+    <access origin="*" subdomains="true" />
     <engine name="ios" spec="~4.1.1" />
 </widget>
